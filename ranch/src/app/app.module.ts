@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { CowsModule } from './cows/cows.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DbComponent } from './db/db.component';
-import { ReportComponent } from './report/report.component';
-import { DataComponent } from './data/data.component';
+import { HeaderComponent } from './header.component';
+import { FooterComponent } from './footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DbComponent,
-    ReportComponent,
-    DataComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CowsModule
   ],
   providers: [
     provideClientHydration()
